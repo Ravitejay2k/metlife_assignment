@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Assignment</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="libs/jquery-ui.css">
+    <link href="https://fonts.googleapis.com/css?family=Noto+Sans&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-xs-1 spacezero">
+                <div class="center">
+                    <img class="hamburger" src="./icons/hamburger.png">
+                </div>
+            </div>
+            <div class="col-xs-10 spacezero logospace">
+                <div class="logocenter">
+                    <img class="logo" src="./icons/metlife_eng_logo_rgb.jpg">
+                </div>
+            </div>
+
+        </div>
+
+        <div class="row">
+            <div class="col-sm-12 col-xs-12 title"> Product Name Application</div>
+            <div class="col-sm-12 col-xs-12">
+                <div id="stepper-1" class="ml-step-container">
+
+                    <!-- STEP 1 -->
+
+                    <div class="ml-step-header completed " id="step1">
+                        <div class="ml-step-header-elements">
+                            <span class="ml-step-numbers ml-completed-step ">1</span>
+                            <h3>Personal Information</h3>
+                        </div>
+                        <hr class="ml-step-hr">
+                    </div>
+                    <div class="ml-step-content completed" style="display: block;">
+                        <div class="ml-step-content-div">
+                            <div><strong>Benefits for Using a Participating, Network Dentist</strong></div>
+                            <br>
+                            <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. <br>
+                                Praesent est enim, gravida eu ligula nec, condimentum fermentum velit. </p>
+                        </div>
+                        <hr class="ml-step-hr">
+                    </div>
+                    <div class="ml-step-header completed " id="step2">
+                        <div class="ml-step-header-elements">
+                            <span class="ml-step-numbers ml-completed-step ">2</span>
+                            <h3>Beneficiary Information</h3>
+                        </div>
+                        <hr class="ml-step-hr">
+                    </div>
+                    <div class="ml-step-content completed" style="display: block;">
+                        <div class="ml-step-content-div">
+                            <div><strong>Benefits for Using a Participating, Network Dentist</strong></div>
+                            <br>
+                            <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. <br>
+                                Praesent est enim, gravida eu ligula nec, condimentum fermentum velit. </p><br>
+
+                        </div>
+                        <hr class="ml-step-hr">
+                    </div>
+                    <div class="ml-step-header completed " id="step3">
+                        <div class="ml-step-header-elements">
+                            <span class="ml-step-numbers ml-completed-step ">3</span>
+                            <h3>Existing Insurance</h3>
+                        </div>
+                        <hr class="ml-step-hr">
+                    </div>
+                    <div class="ml-step-content completed" style="display: block;">
+                        <div class="ml-step-content-div">
+                            <div><strong>Benefits for Using a Participating, Network Dentist</strong></div>
+                            <br>
+                            <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. <br>
+                                Praesent est enim, gravida eu ligula nec, condimentum fermentum velit. </p><br>
+
+                        </div>
+                        <hr class="ml-step-hr">
+                    </div>
+                    <!-- STEP 2 -->
+                    <div class="ml-step-header expanded" id="step4">
+                        <div class="ml-step-header-elements">
+                            <span class="ml-step-numbers ml-current-step ">4</span>
+                            <h3>Payment Information</h3>
+                        </div>
+                        <hr class="ml-step-hr">
+                    </div>
+                    <div class="ml-step-content ">
+
+                        <form data-forms="floating-label" class="ml-form ">
+                            <fieldset class="ml-form-field ml-form-field-radio">
+
+                                <div class="ml-form-field-radio-group">
+                                    <input id="overnight" type="radio" name="time" value="overnight">
+                                    <label for="overnight">Bank Account</label>
+                                </div>
+
+                            </fieldset>
+                            <fieldset class="ml-form-field ml-form-field-select column is-4">
+                                <div class="select">
+                                    <label class="select-label"><span>Account Type</span></label>
+                                    <select name="Options" class="select-hidden">
+                                        <option value="" disabled="" selected="">Account Type</option>
+                                        <option value="Option A">Option A</option>
+                                        <option value="Option B">Option B</option>
+                                        <option value="Option C">Option C</option>
+                                    </select>
+                                    <div class="select-styled" tabindex="0">Account Type</div>
+                                    <ul class="select-options" role="combobox" tabindex="0" style="display: none;">
+                                        <li rel="" tabindex="0" role="listbox" class="">Options</li>
+                                        <li rel="Option A" tabindex="0" role="listbox" class="">Option A</li>
+                                        <li rel="Option B" tabindex="0" role="listbox" class="">Option B</li>
+                                        <li rel="Option C" tabindex="0" role="listbox">Option C</li>
+                                    </ul>
+                                </div>
+
+                            </fieldset>
+
+                            <fieldset class="ml-form-field">
+                                <label>
+                                    <input type="text" onkeyup="this.setAttribute('value', this.value);" value=""
+                                        placeholder="XXX-XX-XXXX" class="ml-mask-social">
+                                    <span>Routing Number</span>
+                                    <div class="ml-form-field-errortext">Error text</div>
+                                </label>
+                                <a href="#" class="ml-form-field-togglevisible"></a>
+                            </fieldset>
+                            <fieldset class="ml-form-field">
+                                <label>
+                                    <input type="text" onkeyup="this.setAttribute('value', this.value);" value=""
+                                        placeholder="XXX-XX-XXXX" class="ml-mask-social">
+                                    <span>Account Number</span>
+                                    <div class="ml-form-field-errortext">Error text</div>
+                                </label>
+                                <a href="#" class="ml-form-field-togglevisible"></a>
+                            </fieldset>
+                            <fieldset class="ml-form-field ml-form-field-radio">
+
+                                <div class="ml-form-field-radio-group">
+                                    <input id="card" type="radio" name="time" value="overnight">
+                                    <label for="card">Debit / Credit Card</label>
+                                </div>
+
+                            </fieldset>
+
+                            <a href="#" class="ml-btn ml-button-primary">PAY NOW</a>
+                            <a href="#" class="ml-btn ml-button-secondary">FINISH LATER</a>
+                            <a href="#" class="ml-btn ml-link">Cancel</a>
+                        </form>
+
+                    </div>
+
+                    <!-- STEP 3 -->
+                    <div class="ml-step-header last-child" id="step5">
+                        <div class="ml-step-header-elements"> <span class="ml-step-numbers">5</span>
+                            <h3>Document Upload</h3>
+
+                        </div>
+                    </div>
+                    <div class="ml-step-content" style="display: none;">
+                        <div class="ml-step-content-div">
+                            <span class="italic">All documents are required</span>
+                            <div>
+                                <h7 class="docs">Required Documents </h7>
+                            </div>
+                            <div>
+                                <div class="row  outerspace lightblue spacezero">
+                                    <div class="col-xs-10 spacezero">
+                                        <span class="bold">ID Front</span>
+                                    </div>
+                                    <div class="col-xs-1 spacezero">
+                                        <img class="rdicon" src="./icons/utility-2_share_≤64p.png">
+                                    </div>
+                                    <div class="col-xs-1 spacezero">
+                                        <img class="rdicon" src="./icons/utility-2_delete_≤64p.png">
+                                    </div>
+                                    <div class="row spacezero">
+                                        <span>Size: 456KB</span>
+                                    </div>
+                                    <div class="row spacezero">
+                                        <span>Uploaded : 02/15/2018 1:30PM</span>
+                                    </div>
+                                </div>
+                                <div class="row  outerspace  spacezero">
+                                    <div class="col-xs-10 spacezero">
+                                        <span class="bold">ID Back</span>
+                                    </div>
+                                    <div class="col-xs-1 spacezero">
+                                        <img class="rdicon" src="./icons/utility-2_share_≤64p.png">
+                                    </div>
+                                    <div class="col-xs-1 spacezero">
+                                        <img class="rdicon" src="./icons/utility-2_delete_≤64p.png">
+                                    </div>
+                                    <div class="row spacezero">
+                                        <span>Size: 769KB</span>
+                                    </div>
+                                    <div class="row spacezero">
+                                        <span>Uploaded : 02/15/2018 1:31PM</span>
+                                    </div>
+                                </div>
+                                <div class="row  outerspace lightblue spacezero">
+                                    <div class="col-xs-10 spacezero">
+                                        <span class="bold">Customer Image</span>
+                                    </div>
+                                    <div class="col-xs-1 spacezero">
+                                        <img class="rdicon" src="./icons/utility-2_share_≤64p.png">
+                                    </div>
+                                    <div class="col-xs-1 spacezero">
+                                        <img class="rdicon disbale" src="./icons/utility-2_delete_≤64p.png">
+                                    </div>
+
+                                </div>
+
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+
+            </div>
+
+        </div>
+    </div>
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <script src="libs/forms.js"></script>
+    <script src="libs/jquery-ui.js"></script>
+    <script src="libs/external/jquery/jquery.js"></script>
+    <script src="js/stepper.js"></script>
+</body>
+
+</html>
